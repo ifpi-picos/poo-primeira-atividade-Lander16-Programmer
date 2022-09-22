@@ -22,10 +22,6 @@ public class App {
         p1.getdadosProf();
         
         System.out.println();
-
-        Professor p2 = new Professor("Lorena Silva", "lorena.silva.prof@gmail.com", "Mestra");
-
-        p2.getdadosProf();
   
         Curso c1 = new Curso("Fundamentos da Programação", 72, "Online", "Técnico", LocalDate.of(2022, 3, 5), LocalDate.of(2022, 8, 14), false, p1);
         
@@ -44,21 +40,6 @@ public class App {
         System.out.println("Data de Término: " + c1.getdataFimCurso());
         System.out.println("Gratuito: " + c1.getgratuitoCurso());
         System.out.println("Professor: " + p1.getnomeProf());
-        
-        System.out.println();
-
-        Curso c2 = new Curso("Curso Básico da Linguaguem Java", 64, "Online", "Não especiícado", LocalDate.of(2022, 7, 1), LocalDate.of(2022, 9, 20), true, p2);
-
-        System.out.println("Dados do Curso\n");
-        
-        System.out.println("Nome: " + c2.getnomeCurso());
-        System.out.println("Carga Horária: " + c2.getcargaHorariaCurso() + "h");
-        System.out.println("Modalidade: " + c2.getmodalidadeCurso());
-        System.out.println("Nível: " + c2.getnivelCurso());
-        System.out.println("Data de início: " + c2.getdataInicioCurso());
-        System.out.println("Data de Término: " + c2.getdataFimCurso());
-        System.out.println("Gratuito: " + c2.getgratuitoCurso());
-        System.out.println("Professor: " + p2.getnomeProf());
         
         System.out.println();
         
@@ -82,6 +63,31 @@ public class App {
         
         System.out.println("Certificamos que a aluna " + a1.getnomeAluno() + " nascida em " + a1.getdataNascAluno() + " utilizando o email " + a1.getemailAluno() + " concluiu do curso " + c1.getnomeCurso() + " com carga horária de " +c1.getcargaHorariaCurso() + "h" + " na modalidade " + c1.getmodalidadeCurso() + " de nível " + c1.getnivelCurso() + " com início em " + c1.getdataInicioCurso() + " e término em " + c1.getdataFimCurso() + " pago" + " ministrado pelo professor " + p1.getnomeProf());
 
+        System.out.println();
+
+        a1.getdadosAluno();
+
+        System.out.println();
+
+        Professor p2 = new Professor("Lorena Silva", "lorena.silva.prof@gmail.com", "Mestra");
+
+        p2.getdadosProf();
+
+        System.out.println();
+
+        System.out.println("Dados do Curso\n");
+
+        Curso c2 = new Curso("Curso Básico da Linguaguem Java", 64, "Online", "Não especiícado", LocalDate.of(2022, 7, 1), LocalDate.of(2022, 9, 20), true, p2);
+        
+        System.out.println("Nome: " + c2.getnomeCurso());
+        System.out.println("Carga Horária: " + c2.getcargaHorariaCurso() + "h");
+        System.out.println("Modalidade: " + c2.getmodalidadeCurso());
+        System.out.println("Nível: " + c2.getnivelCurso());
+        System.out.println("Data de início: " + c2.getdataInicioCurso());
+        System.out.println("Data de Término: " + c2.getdataFimCurso());
+        System.out.println("Gratuito: " + c2.getgratuitoCurso());
+        System.out.println("Professor: " + p2.getnomeProf());
+        
         System.out.println();
 
         System.out.println("Dados do Certificado");

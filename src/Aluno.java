@@ -58,7 +58,7 @@ public class Aluno {
         
         System.out.println("Nome: " + getnomeAluno());
         System.out.println("Data de nascimento: " + getdataNascAluno());
-        System.out.println("Emial: " + getemailAluno());
+        System.out.println("Email: " + getemailAluno());
     }
 
 }    
