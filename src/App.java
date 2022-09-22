@@ -22,8 +22,10 @@ public class App {
         p1.getdadosProf();
         
         System.out.println();
+
+        Professor p2 = new Professor("Lorena Silva", "lorena.silva.prof@gmail.com", "Mestra");
   
-        Curso c1 = new Curso("Fundamentos da Programação", 72, "Online", "Técnico", LocalDate.of(2022, 3, 5), LocalDate.of(2022, 8, 14), true, p1);
+        Curso c1 = new Curso("Fundamentos da Programação", 72, "Online", "Técnico", LocalDate.of(2022, 3, 5), LocalDate.of(2022, 8, 14), false, p1);
         
         c1.setcargaHorariaCurso(60);
         c1.setdataFimCurso(LocalDate.of(2022, 6, 18));
@@ -42,10 +44,21 @@ public class App {
         System.out.println("Professor: " + p1.getnomeProf());
         
         System.out.println();
-        
-        //Certificado cert1 = new Certificado(a1, a1, a1, c1, c1, c1, c1, c1, c1, c1, p1);
 
-        //cert1.getnomeAlunoCert();
+        Curso c2 = new Curso("Curso Básico da Linguaguem Java", 64, "Online", "Não especiícado", LocalDate.of(2022, 7, 1), LocalDate.of(2022, 9, 20), true, p2);
+
+        System.out.println("Dados do Curso\n");
+        
+        System.out.println("Nome: " + c2.getnomeCurso());
+        System.out.println("Carga Horária: " + c2.getcargaHorariaCurso() + "h");
+        System.out.println("Modalidade: " + c2.getmodalidadeCurso());
+        System.out.println("Nível: " + c2.getnivelCurso());
+        System.out.println("Data de início: " + c2.getdataInicioCurso());
+        System.out.println("Data de Término: " + c2.getdataFimCurso());
+        System.out.println("Gratuito: " + c2.getgratuitoCurso());
+        System.out.println("Professor: " + p2.getnomeProf());
+        
+        System.out.println();
         
         System.out.println("Dados do Certificado");
         
@@ -65,8 +78,30 @@ public class App {
         
         System.out.println();
         
-        System.out.println("Certificamos que a aluna " + a1.getnomeAluno() + " nascida em " + a1.getdataNascAluno() + " utilizando o email " + a1.getemailAluno() + " partcipou do curso " + c1.getnomeCurso() + " com carga horária de " +c1.getcargaHorariaCurso() + "h" + " na modalidade " + c1.getmodalidadeCurso() + " de nível " + c1.getnivelCurso() + " com início em " + c1.getdataInicioCurso() + " e término em " + c1.getdataFimCurso() + " gratuito" + " ministrado pelo professor " + p1.getnomeProf());
+        System.out.println("Certificamos que a aluna " + a1.getnomeAluno() + " nascida em " + a1.getdataNascAluno() + " utilizando o email " + a1.getemailAluno() + " concluiu do curso " + c1.getnomeCurso() + " com carga horária de " +c1.getcargaHorariaCurso() + "h" + " na modalidade " + c1.getmodalidadeCurso() + " de nível " + c1.getnivelCurso() + " com início em " + c1.getdataInicioCurso() + " e término em " + c1.getdataFimCurso() + " pago" + " ministrado pelo professor " + p1.getnomeProf());
 
+        System.out.println();
+
+        System.out.println("Dados do Certificado");
+        
+        System.out.println();
+        
+        System.out.println("Nome: " + a1.getnomeAluno());
+        System.out.println("Data de nascimento: " + a1.getdataNascAluno());
+        System.out.println("Email: " + a1.getemailAluno());
+        System.out.println("Nome: " + c2.getnomeCurso());
+        System.out.println("Carga Horária: " + c2.getcargaHorariaCurso() + "h");
+        System.out.println("Modalidade: " + c2.getmodalidadeCurso());
+        System.out.println("Nível: " + c2.getnivelCurso());
+        System.out.println("Data de início: " + c2.getdataInicioCurso());
+        System.out.println("Data de Término: " + c2.getdataFimCurso());
+        System.out.println("Gratuito: " + c2.getgratuitoCurso());
+        System.out.println("Professor: " + p2.getnomeProf());
+        
+        System.out.println();
+        
+        System.out.println("Certificamos que a aluna " + a1.getnomeAluno() + " nascida em " + a1.getdataNascAluno() + " utilizando o email " + a1.getemailAluno() + " concluiu do curso " + c2.getnomeCurso() + " com carga horária de " +c2.getcargaHorariaCurso() + "h" + " na modalidade " + c2.getmodalidadeCurso() + " de nível " + c2.getnivelCurso() + " com início em " + c2.getdataInicioCurso() + " e término em " + c2.getdataFimCurso() + " gratuito" + " ministrado pelo professora " + p2.getnomeProf());
+        
     }
 
 }
