@@ -9,6 +9,7 @@ public class App {
         a1.setdataNascAluno(LocalDate.of(1997, 7, 19));
         a1.setemailAluno("olivernise00@gmail.com");
         a1.setnomeAluno("Jean Carlos");
+        a1.setemailAluno("jeancarlos2000@@gmail.com");
         
         a1.getdadosAluno();
         
