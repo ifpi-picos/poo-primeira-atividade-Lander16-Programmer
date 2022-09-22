@@ -24,6 +24,8 @@ public class App {
         System.out.println();
 
         Professor p2 = new Professor("Lorena Silva", "lorena.silva.prof@gmail.com", "Mestra");
+
+        p2.getdadosProf();
   
         Curso c1 = new Curso("Fundamentos da Programação", 72, "Online", "Técnico", LocalDate.of(2022, 3, 5), LocalDate.of(2022, 8, 14), false, p1);
         
