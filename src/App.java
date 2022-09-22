@@ -27,6 +27,7 @@ public class App {
         
         c1.setcargaHorariaCurso(60);
         c1.setdataFimCurso(LocalDate.of(2022, 6, 18));
+        c1.setgratuitoCurso(false);
         
         
         System.out.println("Dados do Curso\n");
