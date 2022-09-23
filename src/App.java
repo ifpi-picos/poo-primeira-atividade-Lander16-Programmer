@@ -5,6 +5,7 @@ import br.edu.ifpi.dominio.Curso;
 import br.edu.ifpi.dominio.Professor;
 
 public class App {
+
     public static void main(String[] args) throws Exception {
 
         Aluno a1 = new Aluno("Joe Kathleen", LocalDate.of(2001, 1, 16), "joe2001@gmail.com");
