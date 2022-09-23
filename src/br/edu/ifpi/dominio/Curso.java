@@ -1,3 +1,5 @@
+package br.edu.ifpi.dominio;
+
 import java.time.LocalDate;
 
 public class Curso {
